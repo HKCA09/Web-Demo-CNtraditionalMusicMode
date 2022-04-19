@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>宫商角徵羽 首页</title>
+		<link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/nav.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <base target="_blank" />
+	</head>
+	<body>
+		<header>
+		<div class="menu-bar">
+			<img src="img/logo.png" alt="logo" class="logo">
+		  <nav>
+			<ul>
+				<li class="active"><a href="index.html"> <i class="fa fa-home"></i>首页</a>
+					
+				<li><a href="#"><i class="fa fa-music" ></i>关于五声</a>
+					<div class="sub-menu-1">
+						<ul>
+							<li><a href="fivetonedetial.html">介绍</a></li>
+							<li><a href="fivetoneorigin.html">起源</a></li>
+							<li><a href="fivetone.html">五声调式</a></li>					  
+					    </ul>
+				    </div>
+			    </li>
+			  
+			    <li><a href="#"><i class="fa fa-headphones" aria-hidden="true"></i>关于五度相生律</a>
+			    	<div class="sub-menu-1">
+			    		<ul>
+			    			<li><a href="PIdetial.html">含义</a></li>
+			    			<li><a href="PIorigin.html">起源</a></li>
+			    			<li><a href="Math.html">数学物理角度</a></li>					  
+					    </ul>
+				    </div>
+			    </li>
+		
+		        <li><a href="#"><i class="fa fa-book" ></i>知识延伸</a>
+		            <div class="sub-menu-1">
+		            	<ul>
+					        <li><a href="seventone.html">七声调式</a></li>
+					        <li><a href="Instruments.html">八大传统乐器</a></li>
+					        <li><a href="multi.html">多元音乐融合</a></li>					  
+					    </ul>
+		            </div>
+		        </li>
+		        
+		        <li><a href="#"><i class="fa fa-info-circle"></i>感谢</a>
+		        	<div class="sub-menu-1">
+		        		<ul>
+		        			<li><a href="thanks.html">鸣谢</a></li>
+					        <li><a href="questionnaire.html">反馈与建议</a></li>					  
+					    </ul>
+		            </div>
+		        </li>
+			</ul>
+		  </nav>
+		</div>
+		</header>
+		
+		<div class="main">
+			<!-- wrap模块包裹轮播图片 -->
+			<div class="wrap" id="wrap">
+				<ul id="pic">
+					<li><img id="g_image1" src="img/bza.jpg" alt=""></li>
+					<li><img src="img/gq.jpg" alt=""></li>
+					<li><img src="img/qy1.jpg" alt=""></li>
+					<li><img src="img/bz3.jpg" alt=""></li>
+					<li><img src="img/ctyq.jpg" alt=""></li>
+				</ul>
+				<ol id="list">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ol>
+			</div>
+			<script type="text/javascript">
+				window.onload=function(){
+					var wrap=document.getElementById('wrap'),
+					pic=document.getElementById('pic'),
+					list=document.getElementById('list').getElementsByTagName('li'),
+					index=0,
+					timer=null;
+					// 定义并调用自动播放函数
+					if(timer){
+						clearInterval(timer);
+						timer=null;
+					}
+					timer=setInterval(autoplay,2000);
+					// 定义图片切换函数
+					function autoplay(){
+						index++;
+						if(index>=list.length){
+							index=0;
+						}
+						changeoptions(index);
+					}
+					// 鼠标划过整个容器时停止自动播放
+					wrap.onmouseover=function(){
+						clearInterval(timer);
+					}
+					// 鼠标离开整个容器时继续播放至下一张
+					wrap.onmouseout=function(){
+						timer=setInterval(autoplay,2000);
+					}
+					// 遍历所有数字导航实现划过切换至对应的图片
+					for(var i=0;i<list.length;i++){
+						list[i].id=i;
+						list[i].onmouseover=function(){
+							clearInterval(timer);
+							changeoptions(this.id);
+						}
+					}
+					function changeoptions(curindex){
+						for(var j=0;j<list.length;j++){
+							list[j].className='';
+							pic.style.top=0;
+						}
+						list[curindex].className='active';
+						pic.style.top=-curindex*495+'px';
+						index=curindex;
+					}
+				}
+			</script>
+			
+			<div class="news">
+				<p style="font-family: '隶书';">
+					“五声”一词最早出现于《周礼·春官》：“皆文之以五声，宫商角徵羽。”而“五音”最早见于《孟子·离娄上》：“不以六律，不能正五音。”《灵枢·邪客》中把宫、商角徵羽五音，与五脏相配：脾应宫，其声漫而缓；肺应商，其声促以清；肝应角，其声呼以长；心应徵，其声雄以明；肾应羽，其声沉以细，此为五脏正音。
+				</p>
+			</div>
+			<div style="clear: both"></div>
+			
+			<div class="squ">
+				<div class="box">
+					<img src="img/gz.jpg" />
+					<div class="ceng">
+						<h2>“五声”介绍</h2>
+						<p>宫、商、角、徵、羽”是我国五声音调中五个不同音的名称...</p>
+						<a href="fivetonedetial.html">了解更多&nbsp;></a>
+					</div>
+				</div>
+		        <div class="box">
+			        <img src="img/qy2.jpg" />
+			        <div class="ceng">
+				        <h2>三分损益法</h2>
+				        <p>一个个音是如何在一个八度中被确定下来，这其实是律学...</p>
+				        <a href="Math.html">了解更多&nbsp;></a>
+			        </div>
+		        </div>
+		        <div class="box">
+		        	<img src="img/wdq.jpg" />
+		        	<div class="ceng">
+		        		<h2>七声调式</h2>
+		        		<p>变徵、变宫、雅乐、清乐、燕乐...</p>
+		        		<a href="seventone.html">了解更多&nbsp;></a>
+		        	</div>
+		        </div>
+		        <div class="box">
+		        	<img src="img/eh.jpg" />
+		        	<div class="ceng">
+		        		<h2>多元音乐融合</h2>
+		        		<p>【古琴X古筝X哨笛X巫毒鼓X猫】...</p>
+		        		<a href="multi.html">了解更多&nbsp;></a>
+		        	</div>
+		        </div>
+			</div>
+			<div class="yq">
+				<img src="img/yq9.jpg" width="800px"/>
+				<div class="btn">
+					<img src="img/bdctyq.png" width="400px" /><br />
+					<a href="Instruments.html">立即前往&nbsp;></a>
+			    </div>
+		    </div>
+			
+		</div>
+		
+	    <div class="footer-main-div">
+		<div class="footer-social-icons">
+			<ul>
+			  <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+			  <li><a href="#" target="blank"><i class="fa fa-wechat"></i></a></li>
+			  <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+			  <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-menu-one">
+		  <ul>
+		  	<li> <a href="thanks.html">特别鸣谢</a></li>
+		  	<li> <a href="#">dy</a></li>
+			<li> <a href="questionnaire.html">反馈与建议</a></li>
+		  </ul>
+		</div>
+	   
+		<div class="footer-bottom">
+		  <p><a href="mailto:sjdy1999922@126.com">联系网站作者</a>&nbsp &nbsp Copyright &copy;<script>document.write(new Date().getFullYear())</script>&nbsp 花开尘埃a</p>
+		</div>
+	    </div>
+	</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+	list-style: none;
+}
+.main{
+	padding-top: 80px;
+}
+/*wrap的轮播图框架及图片样式*/
+.wrap{
+	height: 465px;
+	width: 900px; 
+	overflow: hidden;
+	position: relative;
+	float: right;
+
+}
+.wrap ul{
+	position: absolute;
+}
+.wrap ul li{
+	height: 465px;
+	margin-top: 30px;
+}
+.wrap ul li img {
+	height: 465px;
+	width: 80%; 
+	float: right;
+	margin-right:20% ;
+	z-index: 0;
+}
+.wrap ol{
+	position: absolute;
+	right: 200px;
+	bottom: 10px;
+}
+.wrap ol li{
+	height: 20px;
+	width: 20px; 
+	background-color:#fff;
+	border: 1px solid #eee;
+	margin-left: 10px;
+	float:left; 
+	line-height: 20px; 
+	text-align: center;
+	border-radius: 5px;
+}
+.wrap ol li.active{
+	background-color: gray; 
+	color: #fff; 
+	border-radius: 5px; 
+}
+.news{
+	margin-top: 30px;
+	height: 435px;
+	width: 25%; 
+	margin-left: 220px;
+	background-color: #eea2a4;
+	
+}
+.news p{
+	padding:40px 30px;
+	line-height: 35px;
+	text-indent: 2em;
+	font-size: 22px;
+	color: #A61B29;
+}
+.squ{
+	text-align: center;
+	margin-top: 100px;
+}
+.box{
+	width: 260px;
+	height: 320px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid darksalmon;
+	margin: 10px 10px;
+}
+.box img{
+	display: block;
+	width: 260px;
+	height: 320px;
+}
+.ceng{
+	width: 260px;
+	height: 320px;
+	position: absolute;
+	top: 320px;
+	background-color: rgba(214,144,146,0.5);
+	transition: 0.5s;
+	text-align: center;
+}
+.box:hover .ceng{
+	top:0px
+}
+.ceng h2{
+	color: white;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	margin: 20% 0;
+}
+.ceng p{
+	color: white;
+	font-family: "微软雅黑";
+	margin:10% 10%;
+}
+.ceng a{
+	color: white;
+	font-family: "微软雅黑";
+	border: 2px solid white;
+	border-radius: 2px;
+	padding: 5px;
+	text-decoration: none;
+}
+.yq{
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+.yq img{
+	z-index: -1;
+}
+.btn{
+	z-index: 1;
+	float: right;
+	margin-top: 250px;
+}
+.btn img{
+	width: 400px;
+	margin-right: 120px;
+	margin-bottom: 20px;
+}
+.btn a{
+	color: #A9A9A9;
+	font-family: "微软雅黑";
+	border: 2px solid #A9A9A9;
+	border-radius: 2px;
+	padding: 5px;
+	text-decoration: none;
+	margin-right: 150px;
+}
+.btn a:hover{
+	color: #E98074;
+	border: 2px solid #E98074;
+}

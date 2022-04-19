@@ -1,0 +1,28 @@
+.main{
+	padding-top: 80px;
+	
+}
+.con{
+	border:1px solid gainsboro;
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px #DCDCDC;
+	background-color: white;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 20px;	
+	padding: 20px;
+	text-align: center;
+}
+.con h2{
+	margin: 0 10px;
+}
+.con hr{
+	margin: 10px 0;
+}
+.con p{
+	margin-top: 10px;
+	font-family: "微软雅黑";
+	color: #A61B29;
+	font-weight: bold;
+}
+

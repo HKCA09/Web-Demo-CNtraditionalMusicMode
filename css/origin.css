@@ -1,0 +1,84 @@
+.main{
+	padding-top: 80px;
+	margin: 0 10%;
+}
+.title{
+	width: 100%;
+	padding: 20px 0;
+	margin-left: 100px;
+    text-align: left;
+}
+.title img{
+	width: 100px;
+}
+.txt{
+	margin-top: 10px;
+	margin-bottom: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.txt img{
+	vertical-align:middle;
+}
+.txt h2{
+	font-family: "微软雅黑";
+	font-weight:normal;
+	display: inline;
+	margin-left: 20px;
+	vertical-align:middle;
+}
+.txt p{
+	text-indent: 2em;
+	margin:10px 30px;
+	line-height: 24px;
+}
+.pic{
+    margin-left: 40%;
+    margin-top: 20px;
+	height: 75px;
+}
+ #fy{
+ 	width:50px; 
+ 	height:20px;
+ 	text-align:center;
+ 	font-size:16px;
+ 	color:red;
+ 	position:absolute;
+ 	right:0px; 
+ 	top:0px;
+ 	cursor:pointer;
+}
+td h2{
+	font-family: "微软雅黑";
+	display: inline;
+	margin-left: 0px;
+	vertical-align:middle;
+	color: floralwhite;
+}
+td p{
+    padding:0 10px;
+	line-height: 30px;
+	font-size: 16px;
+	color: floralwhite;
+}
+.tab{
+	margin:20px 15%;
+	padding-top: 10px;
+}
+.pic {
+	width:420px;
+	height: 315px;
+	margin:0;
+	box-shadow: 3px 3px 2px #a61b29;
+    overflow: hidden;
+}
+
+.pic img{
+	width:420px ;
+	height: 315px;
+	cursor: pointer;  
+    transition: all 0.6s;
+}
+.pic img:hover{
+	transform: scale(1.4);
+}

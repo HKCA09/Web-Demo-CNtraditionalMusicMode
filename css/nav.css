@@ -1,0 +1,244 @@
+*
+{padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+html{
+	height: 100%;
+}
+body{
+    min-height: 100%;
+    background: #fbeee2;
+    position: relative;
+    font-family: "微软雅黑";
+    padding-bottom:170px ;
+}
+/*header样式*/
+header{
+    background: #de1c31;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+    padding: 0;
+}
+
+.logo {
+    margin: 0%;
+    padding-top: 5px;
+    float: left;
+    margin-left: 100px;
+    height: 65px;
+}
+.menu-bar{
+    width: 85%;
+    margin: 0;
+    text-align: center;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    color: white;
+}
+nav ul li{
+    
+    margin-left:40px;
+    padding-top: 25px;
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.menu-bar ul li :hover{
+    color:white;
+}
+
+.menu-bar a::before{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #f1939c;
+
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+}
+.sub-menu-1 a::before{
+    content: '';
+    display: block;
+    height: 0px;
+    width: 100%;
+ 
+}
+nav a:hover::before{
+    width: 100%;
+}
+.menu-bar{
+    background: #de1c31;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fbeee2;
+}
+.menu-bar ul li{
+    width: 165px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fbeee2;
+}
+.sub-menu-1 ul li:hover{
+    background: #fbeee2;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #de1c31;
+    margin-top:15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 165px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color:white;
+    
+}
+
+
+/* footer样式 */
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #de1c31;
+    padding:25px,0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer-main-div a{
+    text-decoration: none;
+    outline: none;
+
+}
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+}
+.footer-social-icons ul{
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #c02c38;
+}
+.footer-social-icons ul li a{
+    color: #f0c9cf;
+    font-size: 20px;
+    display: block;
+}
+.footer-social-icons ul li a i{
+    line-height: 35px;
+}
+.footer-social-icons ul li:hover{
+    background: #e98074;
+}
+.footer-social-icons ul li:hover a{
+    color: white;
+}
+
+.footer-menu-one{
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    margin-top: 10px;
+}
+.footer-menu-one ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.footer-menu-one ul li{
+    display: inline-block;
+    margin: 0px 30px;
+    padding-bottom: 10px;
+}
+.footer-menu-one ul li a{
+    font-family: "微软雅黑";
+    font-size: 15px;
+    font-weight: 600;
+    color: #fbeee2;
+    letter-spacing: 1px;
+
+}
+.footer-menu-one ul li a:hover{
+    color: white;
+}
+
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #c02c38;
+    padding: 5px;
+
+}
+.footer-bottom{
+    font-family:"楷体";
+    font-size: 14px;
+    text-align: center;
+    color: #fbeee2;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.footer-bottom p a{
+    color: #fbeee2;
+}
+.footer-bottom p a:hover{
+    color: white;
+}
