@@ -1,7 +1,7 @@
 # Web-Demo-CNtraditionalMusicMode
 一个关于前端、网站规划与网页设计的Demo（HTML，CSS，JS）  
 * 网站主题是《宫商角徵羽》——中国传统音乐调式宣传网站   
-是 [bilibili-前端/网站规划与网页设计】结课大作业效果展示](https://www.bilibili.com/video/BV1Gf4y1S7P3) 视频中项目的源码  
+是 [bilibili-【前端/网站规划与网页设计】结课大作业效果展示](https://www.bilibili.com/video/BV1Gf4y1S7P3) 视频中项目的源码  
 
 * html & css & js: 项目文件、源代码
 * img: 图片素材
